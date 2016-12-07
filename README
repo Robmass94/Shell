@@ -1,0 +1,30 @@
+Course: COP 5570
+Assignment: Project 1
+Author: Robert Massicotte
+
+
+To compile both the "shell" and "myls" programs, simply type "make". 
+To run the shell, simply type "./shell".
+
+This shell supports the required built-in commands of "exit", "cd", "pwd", 
+and "set", as well as all existing external commands. 
+
+The myls command requires that the MYPATH environment variable be set to 
+the location of the myls executable (under the myls directory). If this 
+variable is not set, an error message will be printed. If this variable is set 
+but does not contain the location of the myls executable, an error message will 
+also be printed. When testing on my CS account, I set MYPATH to the value 
+"/home/grads/massicot/COP5570/Project1/myls". The program takes an optional 
+directory argument. If this argument is not provided, the program will list 
+the contents of the current directory.
+
+Multiple pipes are supported. I/O redirection is supported. A simple form of 
+background processes is supported, such that the parent process is not blocked 
+by the child process, and the next prompt will be printed. All zombie processes 
+are reaped by the kernel through the use of signals.
+
+The program does support pipes and I/O redirection in the same command, as 
+well as pipes and background process in the same command.
+
+Per the assignment specifications, special characters, like wildcard 
+expansion *, are not supported.
